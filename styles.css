@@ -119,3 +119,37 @@ nav a{
 nav a:hover {
     border-bottom-color: var(--accent);
 }
+
+/* Lab 13 · Task 1: which page am I on */
+nav a.current {
+    border-bottom-color: var(--accent);
+    color: var(--accent);
+}
+
+/* Lab 13 · Task 4: separate the bar from the header */
+nav {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+/* Lab 13 · Task 5: keyboard focus outline */
+nav a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+/* Lab 13: horizontal navigation */
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li {
+    margin-bottom: 0;
+    padding-left: 0;
+    border-left: none;
+}
