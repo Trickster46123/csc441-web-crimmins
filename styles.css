@@ -1,9 +1,7 @@
 
 /* Class 11 · Step 4: the basics */
 
-
 /* Lab 11 · Task 5: my colors */
-
 :root {
     --text: #e2e8f0;
     --text-muted: #94a3b8;
@@ -51,12 +49,15 @@ h2 {
     border-bottom: 1px solid var(--border);
     padding-bottom: 0.5rem;
 }
+
 p {
     font-size: 1.05rem;
     margin-bottom: 1rem;
 }
 
+
 /* Lab 12 · Task 3: footer */
+/* Lab 14 · Task 4: footer stacks on narrow screens */
 footer {
     margin-top: 4rem;
     color: var(--text-muted);
@@ -64,14 +65,13 @@ footer {
     border-top: 1px solid var(--border);
     padding-top: 1.5rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 0.5rem;
     align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
 }
 
-/* Lab 11 · Task 4: links */
 
+/* Lab 11 · Task 4: links */
 a {
     color: var(--accent);
     text-decoration: none;
@@ -105,4 +105,81 @@ li {
     margin-bottom: 0.75rem;
     padding-left: 1rem;
     border-left: 2px solid var(--accent);
+}
+
+/* Lab 13: navigation styling */
+nav {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+nav a {
+    font-weight: 700;
+    padding-bottom: 0.25rem;
+    border-bottom: 4px solid transparent;
+}
+
+nav a:hover,
+nav a.current {
+    border-bottom-color: var(--accent);
+}
+
+nav a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+/* Lab 14 · Task 1: navigation stacks on narrow screens */
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+nav li {
+    margin-bottom: 0;
+    padding-left: 0;
+    border-left: none;
+}
+
+/* Class 14 · Step 3: stack by default */
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+/* Class 14 · Step 2: card styling */
+.card {
+    flex: 1;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+/* Class 14 · Step 3 and Lab 14 · Tasks 1 and 4 */
+@media (min-width: 40rem) {
+    .cards {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Lab 14 · Task 6: wider layout on large screens */
+@media (min-width: 64rem) {
+    body {
+        max-width: 60rem;
+    }
 }
