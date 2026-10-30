@@ -47,3 +47,18 @@ if (backToTopButton) {
         });
     });
 }
+
+// Class 16: Step 4: handle the submit
+const contactForm = document.querySelector("#contact-form");
+const formStatus = document.querySelector("#form-status");
+
+if (contactForm && formStatus) {
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.querySelector("#name").value;
+
+        formStatus.textContent = `Thank you for your message, ${name}! This form is a demonstration, so no message was sent.`;
+        contactForm.reset();
+    });
+}

@@ -29,12 +29,12 @@ I used ChatGPT to help understand Flexbox and media queries and to troubleshoot 
 
 ## Week 10, Wednesday
 
-HTML controls what content appears on my webpage, including text, images, and navigation. CSS controls how the website looks, including the colors, spacing, and layout. JavaScript allows the page to react when someone interacts with it, such as clicking the theme button.
+HTML is what I use to put content on my website, like text, images, and links. CSS controls how everything looks, including the colors and layout. JavaScript lets me make the website interactive, like having a button that changes the theme.
 
-The defer attribute allows the browser to finish reading the HTML before running the JavaScript. Without it, the script might try to find an element before the browser has created it, which could cause an error.
+The defer attribute tells the browser to finish reading the HTML before running the JavaScript. Without it, the script might try to find something that hasn't loaded yet.
 
-Dark mode worked by changing the CSS variables that I already used throughout my website. When JavaScript adds the dark class, the browser uses the new colors automatically. Without variables, I would have to change the colors in multiple CSS rules separately.
+Dark mode worked because I already used CSS variables for my colors. Instead of changing every color separately, I could change the variables when the dark class was added.
 
-One problem I had was getting the theme button to work properly. I found that some of my HTML had extra closing tags, and the button was not placed correctly inside the navigation list. I fixed the navigation and checked that the JavaScript could find the button. I also learned that some problems can happen without an obvious error appearing on the webpage.
+One problem I had was getting the theme button to work. Some of my HTML had extra closing tags, and I accidentally put the button outside the navigation list. I went back through the HTML and fixed it. The page still loaded even though the code wasn't quite right, which made the problem harder to notice.
 
-One thing I would like to learn is how to make my website more interactive using JavaScript, such as adding a contact form that can check user input before submitting it.
+One thing I would like to learn is how to make a contact form that checks what someone enters before they submit it.
