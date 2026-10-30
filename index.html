@@ -12,18 +12,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Class 15: Step 2: my third file -->
+    <script src="script.js" defer ></script>
 </head>
 
 <body>
 
     <!-- Lab 13 · Task 3: three-page navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html" class="current">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+
+        <!-- Class 15 · Step 3: the theme button -->
+        <li><button id="theme-toggle" type="button">Dark</button></li>
+    </ul>
+</nav>
 
     <!-- Class 11 · Step 2: the page -->
     <!-- Lab 12 · Task 1: group the text so it stacks beside the photo -->
@@ -64,11 +69,16 @@
         </section>
     </main>
 
-    <!-- Lab 12 · Task 3: two things in the footer -->
-    <footer>
-        <p>© 2026 Sam Crimmins</p>
-        <a href="https://github.com/Trickster46123" target="_blank" rel="noopener">GitHub</a>
-    </footer>
+<!-- Lab 12 · Task 3: two things in the footer -->
+<footer>
+    <!-- Class 15 · Step 2: the year, written by JavaScript -->
+    <p>&copy; <span id="year"></span> Sam Crimmins</p>
+
+    <a href="https://github.com/Trickster46123" target="_blank" rel="noopener">GitHub</a>
+
+    <!-- Lab 15 · Task 5: back-to-top button -->
+    <button id="back-to-top" type="button">Back to Top</button>
+</footer>
 
 </body>
 </html>
