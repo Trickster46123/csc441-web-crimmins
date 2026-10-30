@@ -19,13 +19,16 @@
 <body>
 
     <!-- Lab 13 · Task 3: three-page navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html" class="current">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+
+        <!-- Class 15 · Step 3: the theme button -->
+        <li><button id="theme-toggle" type="button">Dark</button></li>
+    </ul>
+</nav>
 
     <!-- Class 11 · Step 2: the page -->
     <!-- Lab 12 · Task 1: group the text so it stacks beside the photo -->
@@ -62,16 +65,20 @@
                 <li>Kotlin: Experience developing Android applications and practicing object-oriented programming concepts.</li>
                 <li>Git and GitHub: Experience managing repositories, creating branches, committing changes, and merging pull requests.</li>
                 <li>Networking: Experience building TCP servers and studying network communication and security concepts.</li>
+            </ul>
         </section>
     </main>
 
-    <!-- Lab 12 · Task 3: two things in the footer -->
-    <footer>
-        <p>© 2026 Sam Crimmins</p>
-        <a href="https://github.com/Trickster46123" target="_blank" rel="noopener">GitHub</a>
-        <!-- Class 15: Step 2: the year, written by JavaScript-->
-        <p><span id="year"></span> Sam Crimmins</p>
-    </footer>
+<!-- Lab 12 · Task 3: two things in the footer -->
+<footer>
+    <!-- Class 15 · Step 2: the year, written by JavaScript -->
+    <p>&copy; <span id="year"></span> Sam Crimmins</p>
+
+    <a href="https://github.com/Trickster46123" target="_blank" rel="noopener">GitHub</a>
+
+    <!-- Lab 15 · Task 5: back-to-top button -->
+    <button id="back-to-top" type="button">Back to Top</button>
+</footer>
 
 </body>
 </html>

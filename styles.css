@@ -186,7 +186,7 @@ nav li {
 
 body.dark {
     --text: white;
-    --text-muted: silver;
+    --text-muted: lightgray;
     --accent: skyblue;
     --background: black;
     --border: dimgray;

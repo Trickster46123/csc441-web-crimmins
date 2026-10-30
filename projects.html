@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Class 13: * Step 1: My second page-->
+    <!-- Class 13: Step 1: My second page -->
     <title>Projects - Sam Crimmins</title>
 
     <!-- Class 12 · Step 1: a typeface I chose -->
@@ -14,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Lab 15 · Task 1: my third file -->
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -23,6 +27,9 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html" class="current">Projects</a></li>
             <li><a href="skills.html">Skills</a></li>
+
+            <!-- Lab 15 · Task 1: theme button -->
+            <li><button id="theme-toggle" type="button">Dark</button></li>
         </ul>
     </nav>
 
@@ -37,30 +44,30 @@
         </div>
     </header>
 
-<main>
-    <!-- Class 14 · Step 1: a row of cards -->
-    <div class="cards">
-        <section class="card">
-            <h2>CampusApp</h2>
-            <p>CampusApp is an Android application I developed using Kotlin and Jetpack Compose. I worked on building the interface and learning more about Android application development.</p>
-        </section>
+    <main>
+        <!-- Class 14 · Step 1: a row of cards -->
+        <div class="cards">
+            <section class="card">
+                <h2>CampusApp</h2>
+                <p>CampusApp is an Android application I developed using Kotlin and Jetpack Compose. I worked on building the interface and learning more about Android application development.</p>
+            </section>
 
-        <section class="card">
-            <h2>SENTINEL</h2>
-            <p>SENTINEL is a cybersecurity toolkit I developed using Python. It includes tools for password analysis and checking file integrity.</p>
-        </section>
+            <section class="card">
+                <h2>SENTINEL</h2>
+                <p>SENTINEL is a cybersecurity toolkit I developed using Python. It includes tools for password analysis and checking file integrity.</p>
+            </section>
 
-        <section class="card">
-            <h2>TCP Server</h2>
-            <p>I worked on TCP server projects as part of my Computer Science coursework. These projects helped me understand network communication and how clients and servers interact.</p>
-        </section>
-    </div>
-</main>
-
+            <section class="card">
+                <h2>TCP Server</h2>
+                <p>I worked on TCP server projects as part of my Computer Science coursework. These projects helped me understand network communication and how clients and servers interact.</p>
+            </section>
+        </div>
+    </main>
 
     <!-- Lab 12 · Task 3: two things in the footer -->
     <footer>
-        <p>© 2026 Sam Crimmins</p>
+        <!-- Lab 15 · Task 1: automatic footer year -->
+        <p>&copy; <span id="year"></span> Sam Crimmins</p>
         <a href="https://github.com/Trickster46123" target="_blank" rel="noopener">GitHub</a>
     </footer>
 

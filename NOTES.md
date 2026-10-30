@@ -26,3 +26,15 @@ I used the narrow layout as the default because it is easier to start with every
 ## AI use
 
 I used ChatGPT to help understand Flexbox and media queries and to troubleshoot some of the more specific issues I was having with my website. One problem involved GitHub, where some of my files and changes were missing from the main branch after merging my Wednesday work. ChatGPT helped me figure out how to recover the missing files and restore my navigation and CSS. I also used it to review my HTML and CSS and help resolve problems as they came up. I made the changes in VS Code and tested the website myself.
+
+## Week 10, Wednesday
+
+HTML controls what content appears on my webpage, including text, images, and navigation. CSS controls how the website looks, including the colors, spacing, and layout. JavaScript allows the page to react when someone interacts with it, such as clicking the theme button.
+
+The defer attribute allows the browser to finish reading the HTML before running the JavaScript. Without it, the script might try to find an element before the browser has created it, which could cause an error.
+
+Dark mode worked by changing the CSS variables that I already used throughout my website. When JavaScript adds the dark class, the browser uses the new colors automatically. Without variables, I would have to change the colors in multiple CSS rules separately.
+
+One problem I had was getting the theme button to work properly. I found that some of my HTML had extra closing tags, and the button was not placed correctly inside the navigation list. I fixed the navigation and checked that the JavaScript could find the button. I also learned that some problems can happen without an obvious error appearing on the webpage.
+
+One thing I would like to learn is how to make my website more interactive using JavaScript, such as adding a contact form that can check user input before submitting it.
