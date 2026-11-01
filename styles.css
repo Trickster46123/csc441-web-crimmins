@@ -1,13 +1,19 @@
 
+/* Class 16: Step 3: padding counts inside width */
+* {
+    box-sizing: border-box;
+}
+
 /* Class 11 · Step 4: the basics */
 
 /* Lab 11 · Task 5: my colors */
 :root {
-    --text: #e2e8f0;
-    --text-muted: #94a3b8;
-    --accent: #2dd4bf;
-    --background: #0f172a;
-    --border: #334155;
+    --text: #0f172a;
+    --text-muted: #475569;
+    --accent: #0f766e;
+    --background: #ffffff;
+    --border: #cbd5e1;
+    --error: crimson;
 }
 
 /* Lab 12 · Task 1: header side by side */
@@ -55,7 +61,6 @@ p {
     margin-bottom: 1rem;
 }
 
-
 /* Lab 12 · Task 3: footer */
 /* Lab 14 · Task 4: footer stacks on narrow screens */
 footer {
@@ -69,7 +74,6 @@ footer {
     gap: 0.5rem;
     align-items: center;
 }
-
 
 /* Lab 11 · Task 4: links */
 a {
@@ -152,6 +156,7 @@ nav li {
     flex-direction: column;
     gap: 1.5rem;
 }
+
 /* Class 14 · Step 2: card styling */
 .card {
     flex: 1;
@@ -184,10 +189,72 @@ nav li {
     }
 }
 
+/* Class 15 · Step 3: dark theme */
 body.dark {
     --text: white;
     --text-muted: lightgray;
     --accent: skyblue;
     --background: black;
     --border: dimgray;
+    --error: lightsalmon;
+}
+
+/* Class 16 · Step 3: form labels */
+form label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+/* Class 16 · Step 3: form fields */
+form input,
+form textarea {
+    font: inherit;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: white;
+    color: #0f172a;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+}
+
+/* Class 16 · Step 3: submit button */
+form button {
+    font: inherit;
+    font-weight: 700;
+    color: var(--background);
+    background: var(--accent);
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.4rem;
+    min-height: 44px;
+    cursor: pointer;
+}
+
+#form-status {
+    font-weight: 700;
+    color: var(--accent);
+}
+
+/* Lab 16 · Task 1: the error state */
+#form-status.error {
+    color: var(--error);
+}
+
+/* Lab 16 · Task 3: improve the header on phone screens */
+@media (max-width: 39.999rem) {
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    .portrait {
+        width: 140px;
+        height: 140px;
+    }
 }
