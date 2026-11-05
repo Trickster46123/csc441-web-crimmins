@@ -47,6 +47,10 @@ When I tested the Contact page at phone width, I noticed that my name was taking
 
 I think the form would need a server or some other way to receive and process the information before it could actually send messages. Right now, the JavaScript only checks the information and displays a confirmation.
 
+## Week 11, Wednesday
+
+Live site: https://samcrimmins.netlify.app
+
 ## AI use
 
 I used ChatGPT to help understand Flexbox and media queries and to troubleshoot some of the more specific issues I was having with my website. One problem involved GitHub, where some of my files and changes were missing from the main branch after merging my Wednesday work. ChatGPT helped me figure out how to recover the missing files and restore my navigation and CSS. I also used it to review my HTML and CSS and help resolve problems as they came up. I made the changes in VS Code and tested the website myself.
