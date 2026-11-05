@@ -51,6 +51,14 @@ I think the form would need a server or some other way to receive and process th
 
 Live site: https://samcrimmins.netlify.app
 
+GitHub is where I store my website files and keep track of the changes I make. Netlify takes those files and publishes the website so other people can access it online.
+
+The live website will not change when I merge into development because Netlify is using the release branch. The changes have to be merged into release before they become public.
+
+The padlock means the website uses HTTPS, which encrypts the connection between the browser and the server. It helps protect information being transferred.
+
+I looked through my repository and did not find anything I would be uncomfortable sharing publicly. My website contains information about my projects, skills, and coursework, but no private passwords or sensitive information.S
+
 ## AI use
 
 I used ChatGPT to help understand Flexbox and media queries and to troubleshoot some of the more specific issues I was having with my website. One problem involved GitHub, where some of my files and changes were missing from the main branch after merging my Wednesday work. ChatGPT helped me figure out how to recover the missing files and restore my navigation and CSS. I also used it to review my HTML and CSS and help resolve problems as they came up. I made the changes in VS Code and tested the website myself.
