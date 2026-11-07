@@ -74,8 +74,9 @@ if (contactForm) {
         }
 
         formStatus.classList.remove("error");
-        formStatus.textContent = "Thanks, " + name + ". Your message is ready to send.";
-        contactForm.reset();
+        // Class 18: Step 3: submit the validated message
+        formStatus.textContent = "Thanks, " + name + ". Sending your message.";
+        contactForm.submit();
     });
 
     // Lab 16 · Task 2: clear the error when the user starts fixing it
