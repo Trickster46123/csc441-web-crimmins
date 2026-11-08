@@ -59,6 +59,35 @@ The padlock means the website uses HTTPS, which encrypts the connection between 
 
 I looked through my repository and did not find anything I would be uncomfortable sharing publicly. My website contains information about my projects, skills, and coursework, but no private passwords or sensitive information.S
 
+## Week 11, Friday
+
+1. What is a honeypot, and why would you use one instead of CAPTCHA?**
+
+A honeypot is a hidden field used to stop bots from submitting spam through a form. Since regular users cannot see the field, they would normally leave it empty, while a bot might fill it out automatically. I think this is useful because it helps prevent spam without making someone complete a CAPTCHA every time they want to send a message.
+
+2. What is a Deploy Preview, and when would it be useful?**
+
+A Deploy Preview is a version of my website that Netlify creates when I make a pull request. It lets me see how my changes will look before they are published to the actual website. I think this is useful because I can check for mistakes and make sure everything works before merging my changes.
+
+3. What two issues did you find while testing your website on your phone, and how did you fix them?**
+
+The first issue I noticed was that clicking Home would take me to the Contact page instead of my homepage. After checking my files, I found out that my index.html had accidentally been replaced with the Contact page. I restored the original file using Git, pushed the changes, and tested it again on my phone. After that, the homepage worked correctly.
+
+The second thing I worked on was the email field on my Contact page. I added inputmode="email" and autocomplete="email" to make it easier for someone using a phone to enter their email address. This also allows the browser to suggest saved email addresses.
+
+4. Describe how your changes traveled from your laptop to the live website.**
+
+I made my changes in VS Code and saved them to my W11_fri_s18 branch. I then committed and pushed everything to GitHub. From there, I created a pull request to merge the changes into development. Once that was done, I merged development into release, which allowed Netlify to automatically publish the updated version of my website.
+
+5. Why can both your Netlify URL and your custom domain work for the same website?**
+
+My Netlify URL is the address that Netlify provides when it hosts my website. A custom domain can also point to that same website through DNS records. This means both addresses can lead to the same site without needing to create or host two different websites.
+
+6. What is one thing you would like to add to your website before the end of the semester?**
+
+One thing I would like to add is more information about the projects I have worked on. I think it would be useful to include screenshots and better descriptions of my programming and cybersecurity projects. This would help people understand what I have built and what I have learned from working on them.
+
+
 ## AI use
 
 I used ChatGPT to help understand Flexbox and media queries and to troubleshoot some of the more specific issues I was having with my website. One problem involved GitHub, where some of my files and changes were missing from the main branch after merging my Wednesday work. ChatGPT helped me figure out how to recover the missing files and restore my navigation and CSS. I also used it to review my HTML and CSS and help resolve problems as they came up. I made the changes in VS Code and tested the website myself.
