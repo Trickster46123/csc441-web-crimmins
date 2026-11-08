@@ -5,109 +5,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Class 16: Step 1: my contact page -->
-    <title>Contact - Sam Crimmins</title>
+    <title>Sam Crimmins</title>
 
     <!-- Class 12 · Step 1: a typeface I chose -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="styles.css">
-
     <!-- Class 15: Step 2: my third file -->
-    <script src="script.js" defer></script>
+    <script src="script.js" defer ></script>
 </head>
 
 <body>
 
-    <!-- Lab 13 · Task 3: navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skills</a></li>
+    <!-- Lab 13 · Task 3: three-page navigation -->
+<nav>
+    <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+             <!-- Class 16: Step 1: the contact Link -->
+        <li><a href="contact.html">Contact</a></li>
 
-            <!-- Class 16: Step 1: the contact link -->
-            <li><a href="contact.html" class="current">Contact</a></li>
 
-            <!-- Class 15 · Step 3: the theme button -->
-            <li><button id="theme-toggle" type="button">Dark</button></li>
-        </ul>
-    </nav>
+        <!-- Class 15 · Step 3: the theme button -->
+        <li><button id="theme-toggle" type="button">Dark</button></li>
+    </ul>
+</nav>
 
+    <!-- Class 11 · Step 2: the page -->
     <!-- Lab 12 · Task 1: group the text so it stacks beside the photo -->
     <header>
         <img src="images/me.jpg" alt="Portrait of Sam Crimmins" class="portrait">
 
-        <div class="header-text">
+        <div>
             <h1>Sam Crimmins</h1>
-            <p>
-                Computer Science major and Psychology minor at Le Moyne College,
-                interested in cybersecurity and software development.
-            </p>
+            <p>Computer Science major and Psychology minor at Le Moyne College, interested in cybersecurity and software development.</p>
         </div>
     </header>
 
     <main>
+        <section>
+            <h2>About</h2>
+            <p>I'm a Computer Science student at Le Moyne College with an interest in cybersecurity and software development. I've worked with several programming languages and enjoy building projects that help me improve my skills. My goal is to pursue a career in cybersecurity or IT after graduating.</p>
+        </section>
 
-        <!-- Class 18: Step 1: let Netlify handle the submission -->
-        <form id="contact-form"
-              name="contact"
-              method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field">
+        <section>
+            <h2>What I've built</h2>
+            <ul>
+                <li>CampusApp, an Android application built using Kotlin and Jetpack Compose.</li>
+                <li>SENTINEL, a Python cybersecurity toolkit with password analysis and file integrity checking tools.</li>
+                <li>TCP server projects that I developed for my Computer Science coursework.</li>
+                <li>Kotlin programming exercises involving variables, loops, conditions, and functions.</li>
+            </ul>
+        </section>
 
-            <input type="hidden" name="form-name" value="contact">
-
-            <!-- Class 18: Step 1: honeypot field -->
-            <p class="hidden-field">
-                <label>
-                    Leave this empty:
-                    <input name="bot-field" type="text">
-                </label>
-            </p>
-
-            <!-- Class 16 · Step 2: a form -->
-            <p>
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-            </p>
-
-            <p>
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-            </p>
-
-            <p>
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </p>
-
-            <button type="submit">Submit</button>
-
-            <!-- Class 16 · Step 3: form feedback -->
-            <p id="form-status" role="status" aria-live="polite"></p>
-
-        </form>
-
+        <!-- Lab 11 · Task 2: technical skills section -->
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Python: Experience building cybersecurity tools, working with files, and using standard libraries.</li>
+                <li>Kotlin: Experience developing Android applications and practicing object-oriented programming concepts.</li>
+                <li>Git and GitHub: Experience managing repositories, creating branches, committing changes, and merging pull requests.</li>
+                <li>Networking: Experience building TCP servers and studying network communication and security concepts.</li>
+            </ul>
+        </section>
     </main>
 
-    <!-- Lab 12 · Task 3: two things in the footer -->
-    <footer>
+<!-- Lab 12 · Task 3: two things in the footer -->
+<footer>
+    <!-- Class 15 · Step 2: the year, written by JavaScript -->
+    <p>&copy; <span id="year"></span> Sam Crimmins</p>
 
-        <!-- Class 15 · Step 2: the year, written by JavaScript -->
-        <p>&copy; <span id="year"></span> Sam Crimmins</p>
+    <a href="https://github.com/Trickster46123" target="_blank" rel="noopener">GitHub</a>
 
-        <a href="https://github.com/Trickster46123"
-           target="_blank"
-           rel="noopener">GitHub</a>
-
-        <!-- Lab 15 · Task 5: back-to-top button -->
-        <button id="back-to-top" type="button">Back to Top</button>
-
-    </footer>
+    <!-- Lab 15 · Task 5: back-to-top button -->
+    <button id="back-to-top" type="button">Back to Top</button>
+</footer>
 
 </body>
 </html>
+
+<!-- Lab 17 · Task 3: something I can see -->
+<p>My portfolio website is officially live as of November 4, 2026!</p>
