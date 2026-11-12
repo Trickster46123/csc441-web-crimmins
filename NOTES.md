@@ -87,6 +87,27 @@ My Netlify URL is the address that Netlify provides when it hosts my website. A 
 
 One thing I would like to add is more information about the projects I have worked on. I think it would be useful to include screenshots and better descriptions of my programming and cybersecurity projects. This would help people understand what I have built and what I have learned from working on them.
 
+## Week 12, Wednesday, Lab 19
+
+1. 
+
+A database table stores information in rows and columns. Each row represents a record, while the columns contain details about it. For my project, the table stores information about different technology topics, including their titles, descriptions, and categories.
+
+2. 
+
+A table is where the information is actually stored in the database. An API endpoint gives an application a way to request that information without directly accessing the database itself.
+
+3. 
+
+GET is used to request information from a server. When I tested my Supabase endpoint, it returned my five records in JSON format. I also confirmed that the request returned HTTP 200, meaning it worked.
+
+4. 
+
+A publishable key is meant to be used by websites and applications, while a secret key is supposed to stay private. The publishable key works with the database's security rules to control what users can access. Using a secret key in a public website would create a security risk.
+
+5. 
+
+When I used select=*, the API returned all six columns for each record. When I changed it to select=title,category, it only returned the titles and categories. This is useful because an application can request only the information it actually needs.
 
 ## AI use
 
