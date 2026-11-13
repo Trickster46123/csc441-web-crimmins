@@ -95,15 +95,3 @@ if (contactForm) {
         }
     });
 }
-
-
-formStatus.textContent = "Thanks, " + name + ". Sending your message.";
-contactForm.submit();
-
-    // Lab 16 · Task 2: clear the error when the user starts fixing it
-    contactForm.addEventListener("input", function() {
-        if (formStatus.classList.contains("error")) {
-            formStatus.textContent = "";
-            formStatus.classList.remove("error");
-        }
-    });
