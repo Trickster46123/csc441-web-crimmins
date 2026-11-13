@@ -109,6 +109,29 @@ A publishable key is meant to be used by websites and applications, while a secr
 
 When I used select=*, the API returned all six columns for each record. When I changed it to select=title,category, it only returned the titles and categories. This is useful because an application can request only the information it actually needs.
 
+## Week 12, Friday — Lab 20
+
+1. 
+
+The fetch() function sends a request to my Supabase API to get the information stored in my database. The response.json() function takes the JSON returned by the API and turns it into JavaScript data that my website can use to display the records.
+
+2. 
+
+I used textContent because the information is coming from an outside source rather than being written directly into my HTML. It displays the information as regular text instead of treating it as HTML code, which helps prevent unwanted code from being executed.
+
+3. 
+
+If Supabase returns an empty list, my website displays a message saying "No items yet." instead of showing any cards. This lets someone visiting the page know that there are currently no records to display.
+
+4. 
+
+When the network fails, my website displays a message saying that it could not load the items and tells me to check the Console. Once the connection is working again, I can click the Refresh items button to try loading the records again.
+
+5. 
+
+The cards are created using JavaScript after my website gets the records from Supabase. I tested this by changing a title in my database and clicking Refresh items. The updated title appeared on my website without me having to change any HTML, which shows that the cards are being generated from the API.
+
+
 ## AI use
 
 I used ChatGPT to help understand Flexbox and media queries and to troubleshoot some of the more specific issues I was having with my website. One problem involved GitHub, where some of my files and changes were missing from the main branch after merging my Wednesday work. ChatGPT helped me figure out how to recover the missing files and restore my navigation and CSS. I also used it to review my HTML and CSS and help resolve problems as they came up. I made the changes in VS Code and tested the website myself.
