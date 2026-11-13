@@ -87,6 +87,50 @@ My Netlify URL is the address that Netlify provides when it hosts my website. A 
 
 One thing I would like to add is more information about the projects I have worked on. I think it would be useful to include screenshots and better descriptions of my programming and cybersecurity projects. This would help people understand what I have built and what I have learned from working on them.
 
+## Week 12, Wednesday, Lab 19
+
+1. 
+
+A database table stores information in rows and columns. Each row represents a record, while the columns contain details about it. For my project, the table stores information about different technology topics, including their titles, descriptions, and categories.
+
+2. 
+
+A table is where the information is actually stored in the database. An API endpoint gives an application a way to request that information without directly accessing the database itself.
+
+3. 
+
+GET is used to request information from a server. When I tested my Supabase endpoint, it returned my five records in JSON format. I also confirmed that the request returned HTTP 200, meaning it worked.
+
+4. 
+
+A publishable key is meant to be used by websites and applications, while a secret key is supposed to stay private. The publishable key works with the database's security rules to control what users can access. Using a secret key in a public website would create a security risk.
+
+5. 
+
+When I used select=*, the API returned all six columns for each record. When I changed it to select=title,category, it only returned the titles and categories. This is useful because an application can request only the information it actually needs.
+
+## Week 12, Friday — Lab 20
+
+1. 
+
+The fetch() function sends a request to my Supabase API to get the information stored in my database. The response.json() function takes the JSON returned by the API and turns it into JavaScript data that my website can use to display the records.
+
+2. 
+
+I used textContent because the information is coming from an outside source rather than being written directly into my HTML. It displays the information as regular text instead of treating it as HTML code, which helps prevent unwanted code from being executed.
+
+3. 
+
+If Supabase returns an empty list, my website displays a message saying "No items yet." instead of showing any cards. This lets someone visiting the page know that there are currently no records to display.
+
+4. 
+
+When the network fails, my website displays a message saying that it could not load the items and tells me to check the Console. Once the connection is working again, I can click the Refresh items button to try loading the records again.
+
+5. 
+
+The cards are created using JavaScript after my website gets the records from Supabase. I tested this by changing a title in my database and clicking Refresh items. The updated title appeared on my website without me having to change any HTML, which shows that the cards are being generated from the API.
+
 
 ## AI use
 

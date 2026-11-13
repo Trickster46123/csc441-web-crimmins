@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interests - Sam Crimmins</title>
+
+    <!-- Class 12 · Step 1: a typeface I chose -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Class 15 · Step 2: existing website JavaScript -->
+    <script src="script.js" defer></script>
+
+    <!-- Class 20 · Step 2: API connection, then API page -->
+    <script src="config.js" defer></script>
+    <script src="interests.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Class 20 · Step 1: navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="interests.html" class="current">Interests</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+            <!-- Class 15 · Step 3: theme button -->
+            <li><button id="theme-toggle" type="button">Dark</button></li>
+        </ul>
+    </nav>
+
+    <!-- Lab 12 · Task 1: header and portrait -->
+    <header>
+        <img src="images/me.jpg"
+             alt="Portrait of Sam Crimmins"
+             class="portrait">
+
+        <div>
+            <h1>Sam Crimmins</h1>
+            <p>
+                Computer Science major and Psychology minor at Le Moyne College,
+                interested in cybersecurity and software development.
+            </p>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Class 20 · Step 1: API-powered page -->
+        <section class="interests-section">
+            <h2>My Interests</h2>
+            <p>These items come from my Supabase database.</p>
+
+            <p id="showcase-status" role="status">Waiting to load...</p>
+            <p id="showcase-count"></p>
+
+        <!-- Lab 20 · Task 2: ask the API again -->
+            <button id="showcase-refresh" type="button">Refresh items</button>
+
+            <!-- JavaScript will create the cards here -->
+            <div id="showcase-grid" class="showcase-grid"></div>
+        </section>
+
+    </main>
+
+    <!-- Lab 12 · Task 3: footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Sam Crimmins</p>
+
+        <a href="https://github.com/Trickster46123"
+           target="_blank"
+           rel="noopener">GitHub</a>
+
+        <!-- Lab 15 · Task 5: back-to-top button -->
+        <button id="back-to-top" type="button">Back to Top</button>
+    </footer>
+
+</body>
+</html>

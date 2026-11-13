@@ -47,7 +47,8 @@ if (backToTopButton) {
     });
 }
 
-// Class 16: Step 4: handle the submit
+
+ // Class 16: Step 4: handle the submit
 const contactForm = document.querySelector("#contact-form");
 
 if (contactForm) {
@@ -73,11 +74,31 @@ if (contactForm) {
             return;
         }
 
-        formStatus.classList.remove("error");
+        // Lab 18: check the required fields and email format
+        if (!contactForm.checkValidity()) {
+            contactForm.reportValidity();
+            return;
+        }
+
         // Class 18: Step 3: submit the validated message
+        formStatus.classList.remove("error");
         formStatus.textContent = "Thanks, " + name + ". Sending your message.";
+
         contactForm.submit();
     });
+
+    // Lab 16 · Task 2: clear errors when the user starts fixing them
+    contactForm.addEventListener("input", function() {
+        if (formStatus.classList.contains("error")) {
+            formStatus.textContent = "";
+            formStatus.classList.remove("error");
+        }
+    });
+}
+
+
+formStatus.textContent = "Thanks, " + name + ". Sending your message.";
+contactForm.submit();
 
     // Lab 16 · Task 2: clear the error when the user starts fixing it
     contactForm.addEventListener("input", function() {
@@ -86,4 +107,3 @@ if (contactForm) {
             formStatus.classList.remove("error");
         }
     });
-}
